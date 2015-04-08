@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Chance-It!
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Rules</a>
+                </li>
+                <li>
+                    <a href="#">Game</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Welcome to Chance-It!</h1>
+                        <p id="#rules"><b>Chance-it: Rules of Play</b></p>
+                        <p>The rules governing the play of Chance-it are described below.</p>
+                        <ol>
+                            <li>A game of Chance-it involves two players. The player with the highest total score after all rounds is the winner.<br />For this program, you are to have the computer act as player 2 and you are player 1. Also, for this program a game will consist of 10 rounds.</li>
+                            <li>During a round, each player takes a turn, resulting in a score for each player for the round.</li>
+                            <li>A turn for a player consists of rolling the dice one or more times. After each roll, the player must decide whether to take the value of that roll or Chance-it in hopes of getting a higher roll.</li>
+                            <li>If a player decides to stop, then their turn ends and their score for that turn is the value of their last roll.</li>
+                            <li>If, in re-rolling, a player rolls any previous roll of this turn, then their turn ends and their score for this turn is zero..</li>
+                        </ol>
+                        <button id="start_game">Start Game!</button>
+                        <div class="game_board"></div>
+                    </div>
+                        <p><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a><p>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Main Javascript Engine !-->
+    <script src="js/script.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
