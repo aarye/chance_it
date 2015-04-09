@@ -1,113 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Chance-It! : Simple dice roll game created in JS and JQuery">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Chance-It!</title>
+  </head>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <body>
 
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/aarye/chance_it">View on GitHub</a>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+          <h1 id="project_title">Chance-It!</h1>
+          <h2 id="project_tagline">Simple dice roll game created in JS and JQuery</h2>
 
-</head>
-
-<body>
-
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Chance-It!
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Rules</a>
-                </li>
-                <li>
-                    <a href="#">Game</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Welcome to Chance-It!</h1>
-                        <p id="#rules"><b>Chance-it: Rules of Play</b></p>
-                        <p>The rules governing the play of Chance-it are described below.</p>
-                        <ol>
-                            <li>A game of Chance-it involves two players. The player with the highest total score after all rounds is the winner.<br />For this program, you are to have the computer act as player 2 and you are player 1. Also, for this program a game will consist of 10 rounds.</li>
-                            <li>During a round, each player takes a turn, resulting in a score for each player for the round.</li>
-                            <li>A turn for a player consists of rolling the dice one or more times. After each roll, the player must decide whether to take the value of that roll or Chance-it in hopes of getting a higher roll.</li>
-                            <li>If a player decides to stop, then their turn ends and their score for that turn is the value of their last roll.</li>
-                            <li>If, in re-rolling, a player rolls any previous roll of this turn, then their turn ends and their score for this turn is zero..</li>
-                        </ol>
-                        <button id="start_game">Start Game!</button>
-                        <div class="game_board"></div>
-                    </div>
-                        <p><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a><p>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/aarye/chance_it/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/aarye/chance_it/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
-    <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-chance-it" class="anchor" href="#welcome-to-chance-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Chance-It!</h3>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-    <!-- Main Javascript Engine !-->
-    <script src="js/script.js"></script>
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-</body>
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Chance-It! maintained by <a href="https://github.com/aarye">aarye</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
